@@ -406,6 +406,6 @@ function deleteRow(string $tblname,string $condition)
 	function returnJson(int $int,string $str)
 	{
 		return exit(json_encode(["response" => ["code" => $int ,"msg" => $str]]));
-	}
+	}  
  
 ?>
