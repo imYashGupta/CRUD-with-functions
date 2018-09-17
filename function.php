@@ -209,7 +209,8 @@ function deleteRow(string $tblname,string $condition)
 	function move(string $path)
 	{
 		//header("Location:$path");
-		echo "<script>window.location.href='$path';</script>";
+		$link=$path.'.php';
+		echo "<script>window.location.href='$link';</script>";
 		return true;
 	}
 	function secureAdmin()
